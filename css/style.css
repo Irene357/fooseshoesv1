@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'allerregular';
+    src: url('../fonts/aller_rg/aller_rg-webfont.eot');
+    src: url('../fonts/aller_rg/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_rg/aller_rg-webfont.woff2') format('woff2'),
+         url('../fonts/aller_rg/aller_rg.ttf') format('truetype'),
+         url('../fonts/aller_rg/aller_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'allerbold';
+    src: url('../fonts/aller_bd/aller_bd-webfont.eot');
+    src: url('../fonts/aller_bd/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_bd/aller_bd-webfont.woff2') format('woff2'),
+         url('../fonts/aller_bd/aller_bd.ttf') format('truetype'),
+         url('../fonts/aller_bd/aller_bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aller_lightregular';
+    src: url('../fonts/aller_lt/aller_lt-webfont.eot');
+    src: url('../fonts/aller_lt/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('../fonts/aller_lt/aller_lt.ttf') format('truetype'),
+         url('../fonts/aller_lt/aller_lt-webfont.woff2') format('woff2'),
+         url('../fonts/aller_lt/aller_lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'alleritalic';
+    src: url('../fonts/aller_ital/aller_it-webfont.eot');
+    src: url('../fonts/aller_ital/aller_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_ital/aller_it-webfont.woff2') format('woff2'),
+         url('../fonts/aller_ital/aller_it-webfont.woff') format('woff'),
+         url('../fonts/aller_ital/aller_it-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #ebe7df;
+	font-family: 'allerregular';
+}
+		/*HEADER*/
+.back_black {
+	background: #242424;
+}
+.back_white {
+	background: #ffffff;
+}
+.container img {
+	padding: 3% 0;
+}
+.back_black form {
+	padding: 0.7% 0;
+	position: relative;
+}
+.login {
+	color: #666666;
+	font-size: 11px;
+	font-family: 'allerregular';
+}
+.login:focus {
+	box-shadow: none;
+}
+.back_black form:before, .back_black form:after, .main_menu li:before, .main_menu li:last-child:after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 0;
+	left: 28%;
+	background: #7e7e7e;
+}
+.back_black form:after {
+	left: 100%;
+}
+.container .login:hover {
+	color: #666666;
+	outline: none;
+}
+.search {
+	background: url('../images/sprite.png') -735px -20px;
+}
+.main_menu li a {
+	font-size: 16px;
+	color: #000000;
+	font-family: 'allerregular';
+}
+.main_menu li {
+	position: relative;
+	padding: 1.2% 0.9%;
+}
+.main_menu li:before {
+	left: 0;
+	background: #eeeeee;
+}
+.main_menu li:last-child:after {
+	left: 100%;
+	background: #eeeeee;
+}
+.hidden_btn {
+	border: 1px solid #000000;
+}
+.hidden_btn:focus {
+	outline: none;
+}
+.back_linear {
+	background: linear-gradient(white 20%, black 20% 22%, white 22% 50%, black 51% 53%, white 53% 85%, black 85% 87%, white 87%);
+}
+.goods {
+	font-size: 0;
+}
+.goods a {
+	font-family: 'allerbold';
+	font-size: 12px;
+	color: white;
+	display: inline-block;
+	position: relative;
+	padding: 18px 30px 17px 40px;
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	background: url('../images/sprite.png') -569px -493px;
+}
+.goods a+a {
+	border-left: none;
+	background: url('../images/sprite.png') 5px -589px;
+}
+.goods a:before {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 35%;
+	width: 16px;
+	height: 16px;
+	background: url('../images/sprite.png') -110px -606px;;
+}
+.goods a+a:before {
+	background: url('../images/sprite.png') -186px -606px;
+	height: 13px;
+	top: 40%;
+}
+		/*SLIDER*/
+.carousel-indicators li {
+	width: 200px;
+	height: 5px;
+}
+.back_carousel {
+	background: #2e2e2e;
+}
+		/*NAV GOODS*/
+.black_goods {
+	background: #242424;
+}
+.goods_nav li {
+	padding: 25% 5%;
+	background: url('../images/onsale.png') no-repeat center;
+	border: none;
+	text-align: center;
+}
+.goods_nav li+li {
+	background: url('../images/special.png') no-repeat center;
+}
+.goods_nav li+li+li {
+	background: url('../images/musthave.png') no-repeat center;
+}
+.goods_nav li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 5% 10%;
+	background: rgba(57,57,57,.9);
+	font-family: 'aller_lightregular';
+	/*font-size: 25px;*/
+}
+		/*NEW ARRIVALS*/
+.main {
+	margin: 2% 0;
+}
+.container h3 {
+	font-family: 'aller_lightregular';
+	font-size: 22px;
+	padding-top: 0.7%;
+}
+.show_all {
+	border: 1px solid #bcb5a7;
+	color: #bcb5a7;
+	background: rgba(0,0,0,0);
+	border-radius: 0;
+	font-size: 14px;
+	font-family: 'allerbold';
+	padding: 1% 2%;
+}
+.show_all:focus {
+	box-shadow: none;
+}
+.arrivals {
+	height: 300px;
+	overflow: hidden;
+}
+.arrivals li {
+	position: relative;
+}
+.arrivals li:before {
+	content: '$145,99';
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	width: 25%;
+	height: 25%;
+	background: #57c5a0;
+	padding: 8% 2%;
+	color: #fff;
+}
+.arrivals .sale:after {
+	content: 'on sale!';
+	position: absolute;
+	top: 0;
+	right: 3%;
+	width: 25%;
+	height: 25%;
+	background: #000;
+	padding: 8% 1.4%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'allerbold';
+}
+/*
+.arrivals .price {
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	width: 25%;
+	height: 25%;
+	background: #57c5a0;
+	margin: 0;
+	padding: 8% 2%;
+	color: #fff;
+}
+.arrivals .sale {
+	position: absolute;
+	top: 0;
+	right: 3%;
+	width: 25%;
+	height: 25%;
+	background: #000;
+	margin: 0;
+	padding: 8% 1.4%;
+	color: #fff;
+	text-transform: uppercase;
+} */
+.arrivals li a {
+	padding: 43% 0;
+}
+.arrivals img {
+	width: 100%;
+}
+.new_shoes {
+	padding: 0 0;
+	margin-top: 2%;
+}
+		/*BEST SELLERS*/
+.best_sells {
+	border-bottom: 1px solid #cccccc;
+}
+.actions {
+	text-align: right;
+	margin: 0;
+	display: none;
+}
+.name {
+	text-align: center;
+	margin: 0;
+	padding: 2.6% 5.5%;
+	font-size: 18px;
+	font-family: 'allerregular';
+}
+.best_shoes:hover .name {
+	display: none;
+}
+.best_shoes:hover .actions {
+	display: block;
+}
+.new_shoes .actions a {
+	display: inline-block;
+	padding: 1.7% 5.5%;
+}
+.cls-1 {
+    fill: #6e6e6e;
+    fill-rule: evenodd;
+  }
+.actions a:hover .cls-1 {
+ 	fill: #57c5a0;
+}
+.actions a:hover {
+	text-decoration: none;
+}
+.stock:after {
+	content: 'out of stock';
+	position: absolute;
+	top: 0;
+	right: 3%;
+	width: 25%;
+	height: 25%;
+	background: #f27e4b;
+	padding-top: 3%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'allerbold';
+	text-align: center;
+}
+.last {
+	border-bottom: 1px solid #bcb5a7;
+	padding-bottom: 5%;
+}
+		/*ADDITIONAL INFO*/
+.info_block {
+	margin: 3% 0;
+}
+.info_block h4 {
+	font-size: 14px;
+	font-family: 'allerbold';
+	text-transform: uppercase;
+}
+.info_block p, .news div p {
+	font-size: 12px;
+	font-family: 'allerregular';
+}
+.info_block span {
+	font-family: 'alleritalic';
+}
+.info_block>div {
+	background: #dfdbd4;
+	margin: 0 1%;
+	padding: 2% 2% 0.5%;
+}
+.blog {
+	padding-left: 3%;
+	padding-top: 2.5%;
+}
+.news>p {
+	background: #57c5a0;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 1% 2%;
+	text-align: center;
+}
+.news span {
+	font-size: 14px;
+	font-family: 'allerbold';
+}
+.news div {
+	padding: 0 2%;
+}
+		/*WIDGETS*/
+.widgets {
+	background: #242424;
+	color: #7d7d7d;
+}
+.widgets h4 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'allerregular';
+	padding-bottom: 3%;
+}
+.widgets {
+	font-size: 12px;
+	font-family: 'alleritalic';
+	text-align: justify;
+}
+.widgets span {
+	color: #57c5a0;
+}
+.prefooter {
+	border-bottom: 1px solid #1c1c1c;
+}
+.prefooter div {
+	margin: 3% 1.5%;
+}
+		/*LINKS*/
+.links>div {
+	font-size: 0;
+	/*width: 20%;
+	margin-right: 8%;*/
+	text-align: center;
+	padding-top: 3%;
+}
+.links {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.links a {
+	display: inline-block;
+	padding: 19px;
+	background: url('../images/sprite.png') -30px -510px;
+	margin: 0 1.5%;
+}
+.links a+a {
+	background: url('../images/sprite.png') -510px -510px;
+}
+.links a+a+a {
+	background: url('../images/sprite.png') -222px -510px;
+}
+.links a+a+a+a {
+	background: url('../images/sprite.png') -318px -510px;
+}
+.links a+a+a+a+a {
+	background: url('../images/sprite.png') -126px -510px;
+}
+.links form {
+	position: relative;
+	text-align: center;
+	/*margin-left: 3%;*/
+	padding: 3% 11% 5% 0;
+}
+input[type="email"] {
+	background: #2e2e2e;
+	padding: 4% 10% 4% 3%;
+	border: none;
+	height: 36px;
+}
+input[type="email"]:focus {
+	outline: none;
+}
+.links input[type="submit"] {
+	position: absolute;
+	height: 36px;
+	width: 36px;
+	background: url('../images/sprite.png') -414px -510px;
+	border-radius: 0;
+}
+input[type="submit"]:focus {
+	box-shadow: none;
+}
+		/*FOOTER*/
+footer {
+	background: #2e2e2e;
+	color: #7d7d7d;
+	font-size: 12px;
+}
+footer a {
+	text-decoration: none;
+	color: #7d7d7d;
+}
+footer p {
+	margin-bottom: 2%;
+}
+.rights {
+	text-align: center;
+	padding-bottom: 5%;
+}
+.rights div {
+	margin-top: 5%;
+}
+.submenu {
+	padding-top: 1%;
+}
+		/*MEDIA*/
+@media (min-width: 460px) {
+	.goods_nav li {
+		padding: 16% 5%;
+	}
+	.goods_nav li a {
+		padding: 3% 7%;
+	}
+}
+@media (min-width: 576px) {
+	.goods_nav li a {
+		padding: 9% 0%;
+	}
+	.goods_nav li {
+		padding: 14% 10%;
+	}
+	.links {
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	.copy {
+		text-align: left;
+	}
+}
+/*@media (min-width: 615px) {
+	.goods_nav li {
+			padding: 13% 10%;
+		}
+}*/
+@media (min-width: 768px) {
+	.container img {
+		padding: 1.5% 0;
+	}
+	.goods_nav li {
+		padding: 9% 12%;
+	}
+	.container h3 {
+		font-size: 25px;
+	}
+	.arrivals {
+		height: auto;
+	}
+	.links form {
+		width: 40%;
+	}
+	input[type="email"] {
+		padding-right: 10%;
+		padding-left: 6%;
+	}
+	.links>div, .links form {
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	.links>div {
+		margin-right: 2.5%;
+	}
+	.rights {
+		padding-bottom: 3%;
+	}
+	.rights div {
+		margin-top: 3%;
+	}
+} 
+@media (min-width: 992px) {
+	.new_shoes {
+		margin-top: 0;
+	}
+}
+
